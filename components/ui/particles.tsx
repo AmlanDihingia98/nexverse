@@ -300,6 +300,10 @@ export const Particles: React.FC<ParticlesProps> = ({
     rafID.current = window.requestAnimationFrame(animate);
   };
 
+  useEffect(() => {
+    // your effect logic
+  }, [animate, initCanvas, onMouseMove]); // Include all dependencies
+
   return (
     <div
       className={cn("pointer-events-none", className)}

@@ -63,10 +63,8 @@ export default function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="#" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
-                </NavigationMenuLink>
+              <Link href="/" passHref>
+                <span className="text-muted-foreground hover:text-primary transition-colors">Home</span>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>

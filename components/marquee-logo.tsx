@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./ui/marquee";
+import Image from "next/image";
 
 const reviews = [
   {
@@ -53,7 +54,7 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center ">
-        <img className="" width="72" height="72" alt="" src={img} />
+        <Image src={img} alt="" width={72} height={72} />
       </div>
       
     </figure>
